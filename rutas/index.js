@@ -3,7 +3,11 @@ const nuevaRouter = require('./nuevaRouting');
 const usersRouter = require('./usersRouting');
 const categoriasRouter = require('./categoriasRouting');
 const express = require('express');
-/**aplicamos el enrutamiento */
+/**aplicamos el enrutamiento
+ * los enrutamientos sirven para simplificar y organizar de mejor manera el codigo
+ * podiendo asi crear diferentes versiones de los mismos endpoints, para asi poder
+ * ver su funcionamiento mientras se van desarrollando
+ */
 function routerApi(app){
   const router =express.Router();
   app.use('/api/v1',router);
